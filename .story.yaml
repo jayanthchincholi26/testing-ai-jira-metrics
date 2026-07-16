@@ -1,0 +1,11 @@
+story_id: "story-20260716-6da19a"
+name: null
+source_of_truth: "confluence"
+jira_issue_key: null
+ai_tool: "claude-code"
+points: 1
+points_estimated: null
+goal: "Fibonacci Series"
+sprint: "Sprint 0"
+description: "A reference overview of the Fibonacci sequence: its recursive definition F(n)=F(n-1)+F(n-2), a table of first terms, iterative vs. recursive generation approaches with pseudocode, and where it's used (math, CS/algorithms, teaching, nature)."
+created: "2026-07-16T20:14:30+05:30"
