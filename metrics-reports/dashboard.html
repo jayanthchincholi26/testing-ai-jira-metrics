@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metrics Dashboard</title>
+<style>
+:root{
+  --bg:#0a0e14; --panel:#111927; --panel2:#151f30; --line:#22304a;
+  --text:#dbe4f3; --dim:#8fa2c2; --dim2:#5f7396; --accent:#3ddc97; --accent2:#5eb6ff;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f6f8fb; --panel:#ffffff; --panel2:#f1f4f9; --line:#dde3ee;
+    --text:#1b2434; --dim:#4d5b74; --dim2:#7d89ba; --accent:#0b8f57; --accent2:#1f6fd1;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0e14; --panel:#111927; --panel2:#151f30; --line:#22304a;
+  --text:#dbe4f3; --dim:#8fa2c2; --dim2:#5f7396; --accent:#3ddc97; --accent2:#5eb6ff;
+}
+:root[data-theme="light"]{
+  --bg:#f6f8fb; --panel:#ffffff; --panel2:#f1f4f9; --line:#dde3ee;
+  --text:#1b2434; --dim:#4d5b74; --dim2:#7d89ba; --accent:#0b8f57; --accent2:#1f6fd1;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--text); min-height:100vh;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  padding:40px 4vw 64px;
+}
+.wrap{max-width:1100px; margin:0 auto;}
+h1{font-size:1.8rem; margin:0 0 24px;}
+.tiles{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:32px;}
+.tile{
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:16px 18px; min-width:200px; flex:1;
+}
+.tile-label{font-size:0.78rem; color:var(--dim2); text-transform:uppercase; letter-spacing:0.05em;}
+.tile-value{font-size:1.1rem; margin-top:6px; color:var(--text);}
+table{width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line);}
+th, td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); font-size:0.9rem;}
+th{color:var(--dim2); font-weight:600; background:var(--panel2);}
+td{color:var(--text);}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Metrics Dashboard</h1>
+<div class="tiles"><div class="tile"><div class="tile-label">Total Stories</div><div class="tile-value">1</div></div>
+<div class="tile"><div class="tile-label">Total Story Points</div><div class="tile-value">1</div></div>
+<div class="tile"><div class="tile-label">Total Estimated Cost</div><div class="tile-value">$4.39</div></div>
+<div class="tile"><div class="tile-label">Total AI Token Cost</div><div class="tile-value">not tracked</div></div></div>
+<table>
+<thead><tr><th>Story</th><th>Date</th><th>Points</th><th>Duration</th><th>Estimated Cost</th><th>AI Token Cost</th><th>Defects</th></tr></thead>
+<tbody>
+<tr><td>Hello world! using TypeScript</td><td>2026-07-16</td><td>1</td><td>~26 minutes</td><td>$4.39</td><td>not tracked — no AI session_end event observed for this story</td><td>6 total (testing 33.3% / review 66.7%)</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+story_id: "story-20260716-c260cc"
+name: "Hello World 2"
+source_of_truth: "docs-only"
+jira_issue_key: null
+ai_tool: "claude-code"
+points: 2
+points_estimated: 5
+goal: "Harden the hello-world program to fully meet hello-world-2.md's spec: deterministic UTF-8 output with exit code 0 on success and graceful exit code 1 on stdout failure, verified by automated tests (TC-001/TC-002)."
+sprint: null
+description: null
+created: "2026-07-16T14:02:11+05:30"

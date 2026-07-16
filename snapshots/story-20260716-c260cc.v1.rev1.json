@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "story_id": "story-20260716-c260cc",
+  "revision": 1,
+  "pm_metrics": {
+    "name": "Hello World 2",
+    "points": 2,
+    "goal": "Harden the hello-world program to fully meet hello-world-2.md's spec: deterministic UTF-8 output with exit code 0 on success and graceful exit code 1 on stdout failure, verified by automated tests (TC-001/TC-002).",
+    "sprint": null,
+    "source_of_truth": "docs-only",
+    "ai_tool": "claude-code",
+    "created": "2026-07-16T14:02:11+05:30"
+  },
+  "engineering_metrics": {
+    "commits": 0,
+    "checkouts": 0,
+    "merges": 0,
+    "ai_sessions": 0,
+    "tool_uses": 31,
+    "prompts": 5,
+    "event_count": 75,
+    "first_event_at": "2026-07-16T13:59:45+05:30",
+    "last_event_at": "2026-07-16T14:14:56+05:30"
+  },
+  "story_point_cost": {
+    "phase1_points": 5,
+    "phase2_points": 4,
+    "variance": -1,
+    "reduced_confidence": true,
+    "reduced_confidence_reasons": [
+      "no decision-narration producer implemented (out of scope through Story 2.6)"
+    ]
+  },
+  "token_cost": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "reason": "no AI session_end event observed for this story",
+    "sessions_observed": 0,
+    "cost_usd": null
+  },
+  "estimated_cost": {
+    "usd": 2.5305555555555554,
+    "hourly_rate": 10,
+    "duration_minutes": 15.183333333333334,
+    "reason": null
+  },
+  "defect_metrics": {
+    "total_defects": 1,
+    "compile_defects": 1,
+    "test_defects": 0,
+    "review_defects": 0,
+    "testing_efficiency": 100.0,
+    "review_efficiency": 0.0,
+    "reason": null
+  }
+}

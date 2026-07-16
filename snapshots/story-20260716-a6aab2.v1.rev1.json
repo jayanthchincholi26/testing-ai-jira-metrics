@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "story_id": "story-20260716-a6aab2",
+  "revision": 1,
+  "pm_metrics": {
+    "name": "Hello world! using TypeScript",
+    "points": 1,
+    "goal": "Implement a TypeScript program that prints 'Hello, World!' to stdout and exits 0, per the hello-word.md spec",
+    "sprint": null,
+    "source_of_truth": "docs-only",
+    "ai_tool": "claude-code",
+    "created": "2026-07-16T11:46:03+05:30"
+  },
+  "engineering_metrics": {
+    "commits": 2,
+    "checkouts": 0,
+    "merges": 0,
+    "ai_sessions": 1,
+    "tool_uses": 41,
+    "prompts": 10,
+    "event_count": 116,
+    "first_event_at": "2026-07-16T11:42:43+05:30",
+    "last_event_at": "2026-07-16T12:09:03+05:30"
+  },
+  "story_point_cost": {
+    "phase1_points": null,
+    "phase2_points": 11,
+    "variance": null,
+    "reduced_confidence": true,
+    "reduced_confidence_reasons": [
+      "no decision-narration producer implemented (out of scope through Story 2.6)"
+    ]
+  },
+  "token_cost": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "reason": "no AI session_end event observed for this story",
+    "sessions_observed": 0,
+    "cost_usd": null
+  },
+  "estimated_cost": {
+    "usd": 4.388888888888889,
+    "hourly_rate": 10,
+    "duration_minutes": 26.333333333333332,
+    "reason": null
+  },
+  "defect_metrics": {
+    "total_defects": 6,
+    "compile_defects": 2,
+    "test_defects": 0,
+    "review_defects": 4,
+    "testing_efficiency": 33.33333333333333,
+    "review_efficiency": 66.66666666666666,
+    "reason": null
+  }
+}
