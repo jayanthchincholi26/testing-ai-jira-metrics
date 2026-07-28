@@ -1,0 +1,13 @@
+story_id: "story-20260728-57fb5c"
+name: null
+source_of_truth: "jira"
+jira_issue_key: "AI-153"
+ai_tool: "claude-code"
+points: 2
+points_estimated: null
+goal: "Fibonacci Series - 2 using Javascript"
+sprint: "AI Sprint 20"
+sprint_start_date: "2026-07-23T14:06:53.597Z"
+sprint_end_date: "2026-08-10T14:22:49.000Z"
+description: "Fibonacci Series using Javascript. Print in the console.log"
+created: "2026-07-28T19:02:59+05:30"
