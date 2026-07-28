@@ -1,0 +1,36 @@
+name: generate-dashboard
+
+# Story 5.9: one-click, on-demand leadership dashboard generation - no code push
+# required, no local install needed by whoever runs it (just repo access).
+#
+# Gated via a GitHub Environment (see INSTALL.md's one-time setup step): if
+# your repo defines an environment named "dashboard-publish" with required
+# reviewers configured, only an approved reviewer can let this run actually
+# execute, even though anyone with write access can click the button. If no
+# such environment exists yet, GitHub runs this ungated the first time - the
+# environment's protection rules are a repo Settings step this workflow
+# cannot create for you (no admin token here), so set it up before relying
+# on this gate.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    environment: dashboard-publish
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Generate report and dashboard
+        run: |
+          uv run tools/metrics-report/main.py --repo-root .
+          uv run tools/dashboard/main.py --repo-root .
+      - name: Upload as a workflow artifact (not committed - access follows repo/Actions read permissions)
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-dashboard
+          path: metrics-reports/
+          retention-days: 30
