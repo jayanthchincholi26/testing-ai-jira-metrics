@@ -1,0 +1,6 @@
+.story-events.jsonl
+.story-events.pending.jsonl
+.active-story
+.active-claude-session
+node_modules/
+dist/
